@@ -1,12 +1,16 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   variants: {
-     margin: ['hover'],
-     margin: ['responsive', 'hover'],
+    margin: ["hover"],
+    margin: ["responsive", "hover"],
   },
-  content: ["./src/**/*.{html,js}",'index.html',"index.html"],
+  content: ["./src/**/*.{html,js}", "index.html", "index.html"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        secondary: "pink",
+      },
+    },
   },
   plugins: [],
-}
+};
